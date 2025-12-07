@@ -10,6 +10,11 @@
   font-size: 2.25rem;
 }
 
+.blog-subheader-logo {
+  font-family: Georgia, "Times New Roman", sans serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  font-size: 1.25rem;
+}
+
 .blog-header-logo:hover {
   text-decoration: none;
 }
