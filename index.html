@@ -14,159 +14,394 @@
 </head>
 
 <body>
-  <header class="container-fluid d-flex flex-column ">
-    <div class="container-fluid d-flex flex justify-content-around">
-      <div class="d-flex justify-content-end col-4">
-        <img src="images/mock-macon-county-north-carolina.png" alt="Macon County logo" style=" width: 125px;height:100px">
-      </div>
-      <a class="blog-header-logo col-4 text-center" href="#">Macon County</a>
-      <div class="d-flex justify-content-end align-items-center col-4">
-        <input type="text" placeholder="Search..">
-        <a class="link-secondary" href="#" aria-label="Search">
+<header class="container-fluid py-2">
+  <div class="container-fluid d-flex justify-content-between align-items-center flex-wrap">
+
+    
+    <div class="d-flex justify-content-end col-4">
+      <img src="images/mock-macon-county-north-carolina.png" alt="Macon County logo" width="120" height="100">
+    </div>
+
+    
+    <div class="blog-header-logo col-4 text-center">
+      <a class="blog-header-logo text-decoration-none" href="#">Macon County</a>
+    </div>
+
+    
+    <div class="col-4 d-flex justify-content-end align-items-center">
+      <form class="d-flex align-items-center search-form d-none d-md-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+        <button class="btn btn-outline-dark" type="submit">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="brown"
-            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24">
-            <title>Search</title>
-            <circle cx="10.5" cy="10.5" r="7.5" />
-            <path d="M21 21l-5.2-5.2" />
+            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+            <circle cx="10.5" cy="10.5" r="7.5"/>
+            <path d="M21 21l-5.2-5.2"/>
           </svg>
-        </a>
-      </div>
+        </button>
+      </form>
+
+      
+      <button class="btn btn-outline-dark d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileSearch">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="brown"
+          stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+          <circle cx="10.5" cy="10.5" r="7.5"/>
+          <path d="M21 21l-5.2-5.2"/>
+        </svg>
+      </button>
     </div>
-    <div class="row flex-nowrap justify-content-between align-items-center">
-      <div class=" text-center">
-        <p class="blog-subheader-logo">Franklin|Highlands|Nantahala|Otto, North Carolina</p>
-      </div>
+
+    
+    <div class="collapse mt-2 w-100 d-md-none" id="mobileSearch">
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
+        <button class="btn btn-outline-dark" type="submit">Search</button>
+      </form>
     </div>
-  </header>
+
+  </div>
+
+ 
+  <div class="row flex-nowrap justify-content-between align-items-center mt-2">
+    <div class="text-center w-100">
+      <p class="blog-subheader-logo mb-0">Franklin | Highlands | Nantahala | Otto, North Carolina</p>
+    </div>
+  </div>
+</header>
 
 
-  <nav class="navbar navbar-expand-sm">
-
+  <nav class="navbar navbar-expand-md bg-success navbar-dark">
     <div class="container-fluid">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <div class="btn-group">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-none d-md-flex">
+
+
+
+          <li class="nav-item">
             <button type="button" class="btn btn-success">Home</button>
-            <div class="btn-group">
-              <button type="button" class="btn btn-success" data-bs-toggle="dropdown">Your Government</button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">County Commissioners</a></li>
-                <li><a class="dropdown-item" href="#">County Manager's Office</a></li>
-                <li><a class="dropdown-item" href="#">Advisory Boards & Committees</a></li>
-                <li><a class="dropdown-item" href="#">Budget</a></li>
-                <li><a class="dropdown-item" href="#">Community Funding Pool</a></li>
-                <li><a class="dropdown-item" href="#">County Ordinances</a></li>
-                <li><a class="dropdown-item" href="#">Employee Directory</a></li>
-                <li><a class="dropdown-item" href="#">Employee Services</a></li>
-                <li><a class="dropdown-item" href="#">Schedule of Regular Meetings</a></li>
-              </ul>
+          </li>
+
+          <li>
+            <a class="nav-link dropdown-toggle text-light" href="#" data-bs-toggle="dropdown">Your Government</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">County Commissioners</a></li>
+              <li><a class="dropdown-item" href="#">County Manager's Office</a></li>
+              <li><a class="dropdown-item" href="#">Advisory Boards & Committees</a></li>
+              <li><a class="dropdown-item" href="#">Budget</a></li>
+              <li><a class="dropdown-item" href="#">Community Funding Pool</a></li>
+              <li><a class="dropdown-item" href="#">County Ordinances</a></li>
+              <li><a class="dropdown-item" href="#">Employee Directory</a></li>
+              <li><a class="dropdown-item" href="#">Employee Services</a></li>
+              <li><a class="dropdown-item" href="#">Schedule of Regular Meetings</a></li>
+            </ul>
+          </li>
+
+
+
+          <li>
+            <a class="nav-link dropdown-toggle text-light" href="#">County Agencies</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Macon County Animal Services</a></li>
+              <li><a class="dropdown-item" href="#">Board of Elections</a></li>
+              <li><a class="dropdown-item" href="#">Clerk of Court</a></li>
+              <li><a class="dropdown-item" href="#">Economic Development Commission</a></li>
+              <li><a class="dropdown-item" href="#">Education</a></li>
+              <li><a class="dropdown-item" href="#">Finance Department</a></li>
+              <li><a class="dropdown-item" href="#">Health Department</a></li>
+              <li><a class="dropdown-item" href="#">Housing Department</a></li>
+              <li><a class="dropdown-item" href="#">Human Reasources</a></li>
+              <li><a class="dropdown-item" href="#">Information Technology</a></li>
+              <li><a class="dropdown-item" href="#">Mapping/GIS</a></li>
+              <li><a class="dropdown-item" href="#">NC Cooperative Extension</a></li>
+              <li><a class="dropdown-item" href="#">Parks & Recreation</a></li>
+              <li><a class="dropdown-item" href="#">Planning, Permitting, & Development</a></li>
+              <li><a class="dropdown-item" href="#">Public Transportation</a></li>
+              <li><a class="dropdown-item" href="#">Register of Deeds</a></li>
+              <li><a class="dropdown-item" href="#">Social Services</a></li>
+              <li><a class="dropdown-item" href="#">Solid Waste</a></li>
+              <li><a class="dropdown-item" href="#">Soil & Wtare Conservation</a></li>
+              <li><a class="dropdown-item" href="#">Tax Department</a></li>
+              <li><a class="dropdown-item" href="#">Veterans Services</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link dropdown-toggle text-light" href="#">Public Safety</a>
+            <ul class=" dropdown-menu">
+              <li><a class="dropdown-item" href="#">Emergency Management</a></li>
+              <li><a class="dropdown-item" href="#">911 Center</a></li>
+              <li><a class="dropdown-item" href="#">EMS (Emergency Medical Services)</a></li>
+              <li><a class="dropdown-item" href="#">Fire Departments</a></li>
+              <li><a class="dropdown-item" href="#">Fire Marshal</a></li>
+              <li><a class="dropdown-item" href="#">Safe Newborn Surrender Protocol</a></li>
+              <li><a class="dropdown-item" href="#">Animal Services</a></li>
+              <li><a class="dropdown-item" href="#">ESheriff's Office</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link dropdown-toggle text-light" href="#">Online Services</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Deeds Image Lookup</a></li>
+              <li><a class="dropdown-item" href="#">Form Downloads</a></li>
+              <li><a class="dropdown-item" href="#">Tax & Mapping</a></li>
+              <li><a class="dropdown-item" href="#">Macon County Weather</a></li>
+              <li><a class="dropdown-item" href="#">Real Estate Lookup & Mapping</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link dropdown-toggle text-light" href="#">For Residents</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Animal Control & Pet Adoption</a></li>
+              <li><a class="dropdown-item" href="#">Code Red Sign Up</a></li>
+              <li><a class="dropdown-item" href="#">Community Resource Center</a></li>
+              <li><a class="dropdown-item" href="#">County Phone Directory</a></li>
+              <li><a class="dropdown-item" href="#">Little Tennessee River Greenway</a></li>
+              <li><a class="dropdown-item" href="#">Macon County E-Newslatter</a></li>
+              <li><a class="dropdown-item" href="#">Macon County Public Library</a></li>
+              <li><a class="dropdown-item" href="#">Macon County Airport</a></li>
+              <li><a class="dropdown-item" href="#">Macon County Schools</a></li>
+              <li><a class="dropdown-item" href="#">Macon County Weather</a></li>
+              <li><a class="dropdown-item" href="#">Permits, Licenses & Inspections</a></li>
+              <li><a class="dropdown-item" href="#">Perscription Discount Card</a></li>
+              <li><a class="dropdown-item" href="#">SEE ALL RESOURCES</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link dropdown-toggle text-light" href="#">For Businesses</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Economic Development Commission</a></li>
+              <li><a class="dropdown-item" href="#">Local & State Government Links</a></li>
+              <li><a class="dropdown-item" href="#">North Carolina Public Records</a></li>
+              <li><a class="dropdown-item" href="#">Permits, Licenses & Inspections</a></li>
+              <li><a class="dropdown-item" href="#">Tax & Mapping</a></li>
+            </ul>
+          </li>
+          <li>
+            <a class="nav-link dropdown-toggle text-light" href="#">For Visitors</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Tour Macon County</a></li>
+              <li><a class="dropdown-item" href="#">Franklin Chamber of Commerance</a></li>
+              <li><a class="dropdown-item" href="#">Highlands Chamber of Commerance</a></li>
+              <li><a class="dropdown-item" href="#">Little Tennessee River Greenway</a></li>
+              <li><a class="dropdown-item" href="#">Maco County Airport</a></li>
+              <li><a class="dropdown-item" href="#">Parks & Recreation</a></li>
+              <li><a class="dropdown-item" href="#">Town of Franklin</a></li>
+              <li><a class="dropdown-item" href="#">Town of Franklin Tourism Site</a></li>
+              <li><a class="dropdown-item" href="#">Town of Highlands</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn-success text-light">Public Announcements</a>
+          </li>
+        </ul>
+        <div class="accordian w-100 d-md-none" id="mobilemenu">
+
+          <a class="list-group-item list-group-item-action collapsed" href="#">Home</a>
+
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#govMenu">
+                Your Government
+              </button>
+            </h2>
+            <div id="govMenu" class="accordion-collapse collapse">
+              <div class="accordion-body p-0">
+                <ul class="list-group">
+                  <li class="list-group-item"><a href="#">County Commissioners</a></li>
+                  <li class="list-group-item"><a href="#">County Manager's Office</a></li>
+                  <li class="list-group-item"><a href="#">Advisory Boards & Committees</a></li>
+                  <li class="list-group-item"><a href="#">Budget</a></li>
+                  <li class="list-group-item"><a href="#">Community Funding Pool</a></li>
+                  <li class="list-group-item"><a href="#">County Ordinances</a></li>
+                  <li class="list-group-item"><a href="#">Employee Directory</a></li>
+                  <li class="list-group-item"><a href="#">Employee Services</a></li>
+                  <li class="list-group-item"><a href="#">Schedule of Regular Meetings</a></li>
+                </ul>
+              </div>
             </div>
-            <div class="btn-group">
-              <button type="button" class="btn btn-success" data-bs-toggle="dropdown">County Agencies</button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Macon County Animal Services</a></li>
-                <li><a class="dropdown-item" href="#">Board of Elections</a></li>
-                <li><a class="dropdown-item" href="#">Clerk of Court</a></li>
-                <li><a class="dropdown-item" href="#">Economic Development Commission</a></li>
-                <li><a class="dropdown-item" href="#">Education</a></li>
-                <li><a class="dropdown-item" href="#">Finance Department</a></li>
-                <li><a class="dropdown-item" href="#">Health Department</a></li>
-                <li><a class="dropdown-item" href="#">Housing Department</a></li>
-                <li><a class="dropdown-item" href="#">Human Reasources</a></li>
-                <li><a class="dropdown-item" href="#">Information Technology</a></li>
-                <li><a class="dropdown-item" href="#">Mapping/GIS</a></li>
-                <li><a class="dropdown-item" href="#">NC Cooperative Extension</a></li>
-                <li><a class="dropdown-item" href="#">Parks & Recreation</a></li>
-                <li><a class="dropdown-item" href="#">Planning, Permitting, & Development</a></li>
-                <li><a class="dropdown-item" href="#">Public Transportation</a></li>
-                <li><a class="dropdown-item" href="#">Register of Deeds</a></li>
-                <li><a class="dropdown-item" href="#">Social Services</a></li>
-                <li><a class="dropdown-item" href="#">Solid Waste</a></li>
-                <li><a class="dropdown-item" href="#">Soil & Wtare Conservation</a></li>
-                <li><a class="dropdown-item" href="#">Tax Department</a></li>
-                <li><a class="dropdown-item" href="#">Veterans Services</a></li>
-              </ul>
-            </div>
-            <div class="btn-group">
-              <button type="button" class="btn btn-success" data-bs-toggle="dropdown">Public Safety</button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Emergency Management</a></li>
-                <li><a class="dropdown-item" href="#">911 Center</a></li>
-                <li><a class="dropdown-item" href="#">EMS (Emergency Medical Services)</a></li>
-                <li><a class="dropdown-item" href="#">Fire Departments</a></li>
-                <li><a class="dropdown-item" href="#">Fire Marshal</a></li>
-                <li><a class="dropdown-item" href="#">Safe Newborn Surrender Protocol</a></li>
-                <li><a class="dropdown-item" href="#">Animal Services</a></li>
-                <li><a class="dropdown-item" href="#">ESheriff's Office</a></li>
-              </ul>
-            </div>
-            <div class="btn-group">
-              <button type="button" class="btn btn-success" data-bs-toggle="dropdown">Online Services</button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Deeds Image Lookup</a></li>
-                <li><a class="dropdown-item" href="#">Form Downloads</a></li>
-                <li><a class="dropdown-item" href="#">Tax & Mapping</a></li>
-                <li><a class="dropdown-item" href="#">Macon County Weather</a></li>
-                <li><a class="dropdown-item" href="#">Real Estate Lookup & Mapping</a></li>
-              </ul>
-            </div>
-            <div class="btn-group">
-              <button type="button" class="btn btn-success" data-bs-toggle="dropdown">For Residents</button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Animal Control & Pet Adoption</a></li>
-                <li><a class="dropdown-item" href="#">Code Red Sign Up</a></li>
-                <li><a class="dropdown-item" href="#">Community Resource Center</a></li>
-                <li><a class="dropdown-item" href="#">County Phone Directory</a></li>
-                <li><a class="dropdown-item" href="#">Little Tennessee River Greenway</a></li>
-                <li><a class="dropdown-item" href="#">Macon County E-Newslatter</a></li>
-                <li><a class="dropdown-item" href="#">Macon County Public Library</a></li>
-                <li><a class="dropdown-item" href="#">Macon County Airport</a></li>
-                <li><a class="dropdown-item" href="#">Macon County Schools</a></li>
-                <li><a class="dropdown-item" href="#">Macon County Weather</a></li>
-                <li><a class="dropdown-item" href="#">Permits, Licenses & Inspections</a></li>
-                <li><a class="dropdown-item" href="#">Perscription Discount Card</a></li>
-                <li><a class="dropdown-item" href="#">SEE ALL RESOURCES</a></li>
-              </ul>
-            </div>
-            <div class="btn-group">
-              <button type="button" class="btn btn-success" data-bs-toggle="dropdown">For Businesses</button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Economic Development Commission</a></li>
-                <li><a class="dropdown-item" href="#">Local & State Government Links</a></li>
-                <li><a class="dropdown-item" href="#">North Carolina Public Records</a></li>
-                <li><a class="dropdown-item" href="#">Permits, Licenses & Inspections</a></li>
-                <li><a class="dropdown-item" href="#">Tax & Mapping</a></li>
-              </ul>
-            </div>
-            <div class="btn-group">
-              <button type="button" class="btn btn-success" data-bs-toggle="dropdown">For Visitors</button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Tour Macon County</a></li>
-                <li><a class="dropdown-item" href="#">Franklin Chamber of Commerance</a></li>
-                <li><a class="dropdown-item" href="#">Highlands Chamber of Commerance</a></li>
-                <li><a class="dropdown-item" href="#">Little Tennessee River Greenway</a></li>
-                <li><a class="dropdown-item" href="#">Maco County Airport</a></li>
-                <li><a class="dropdown-item" href="#">Parks & Recreation</a></li>
-                <li><a class="dropdown-item" href="#">Town of Franklin</a></li>
-                <li><a class="dropdown-item" href="#">Town of Franklin Tourism Site</a></li>
-                <li><a class="dropdown-item" href="#">Town of Highlands</a></li>
-              </ul>
-            </div>
-            <button type="button" class="btn btn-success">Public Announcements</button>
           </div>
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#agenciesMenu">
+                County Agencies
+              </button>
+            </h2>
+            <div id="agenciesMenu" class="accordion-collapse collapse">
+              <div class="accordion-body p-0">
+                <ul class="list-group">
+                  <li class="list-group-item"><a href="#">Macon County Animal Services</a></li>
+                  <li class="list-group-item"><a href="#">Board of Elections</a></li>
+                  <li class="list-group-item"><a href="#">Clerk of Court</a></li>
+                  <li class="list-group-item"><a href="#">Economic Development Commission</a></li>
+                  <li class="list-group-item"><a href="#">Education</a></li>
+                  <li class="list-group-item"><a href="#">Finance Department</a></li>
+                  <li class="list-group-item"><a href="#">Health Department</a></li>
+                  <li class="list-group-item"><a href="#">Housing Department</a></li>
+                  <li class="list-group-item"><a href="#">Human Resources</a></li>
+                  <li class="list-group-item"><a href="#">Information Technology</a></li>
+                  <li class="list-group-item"><a href="#">Mapping/GIS</a></li>
+                  <li class="list-group-item"><a href="#">NC Cooperative Extension</a></li>
+                  <li class="list-group-item"><a href="#">Parks & Recreation</a></li>
+                  <li class="list-group-item"><a href="#">Planning, Permitting, & Development</a></li>
+                  <li class="list-group-item"><a href="#">Public Transportation</a></li>
+                  <li class="list-group-item"><a href="#">Register of Deeds</a></li>
+                  <li class="list-group-item"><a href="#">Social Services</a></li>
+                  <li class="list-group-item"><a href="#">Solid Waste</a></li>
+                  <li class="list-group-item"><a href="#">Soil & Water Conservation</a></li>
+                  <li class="list-group-item"><a href="#">Tax Department</a></li>
+                  <li class="list-group-item"><a href="#">Veterans Services</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#safetyMenu">
+                Public Safety
+              </button>
+            </h2>
+            <div id="safetyMenu" class="accordion-collapse collapse">
+              <div class="accordion-body p-0">
+                <ul class="list-group">
+                  <li class="list-group-item"><a href="#">Emergency Management</a></li>
+                  <li class="list-group-item"><a href="#">911 Center</a></li>
+                  <li class="list-group-item"><a href="#">EMS</a></li>
+                  <li class="list-group-item"><a href="#">Fire Departments</a></li>
+                  <li class="list-group-item"><a href="#">Fire Marshal</a></li>
+                  <li class="list-group-item"><a href="#">Safe Newborn Surrender Protocol</a></li>
+                  <li class="list-group-item"><a href="#">Animal Services</a></li>
+                  <li class="list-group-item"><a href="#">Sheriff's Office</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#onlineMenu">
+                Online Services
+              </button>
+            </h2>
+            <div id="onlineMenu" class="accordion-collapse collapse">
+              <div class="accordion-body p-0">
+                <ul class="list-group">
+                  <li class="list-group-item"><a href="#">Deeds Image Lookup</a></li>
+                  <li class="list-group-item"><a href="#">Form Downloads</a></li>
+                  <li class="list-group-item"><a href="#">Tax & Mapping</a></li>
+                  <li class="list-group-item"><a href="#">Macon County Weather</a></li>
+                  <li class="list-group-item"><a href="#">Real Estate Lookup & Mapping</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#residentsMenu">
+                For Residents
+              </button>
+            </h2>
+            <div id="residentsMenu" class="accordion-collapse collapse">
+              <div class="accordion-body p-0">
+                <ul class="list-group">
+                  <li class="list-group-item"><a href="#">Animal Control & Pet Adoption</a></li>
+                  <li class="list-group-item"><a href="#">Code Red Sign Up</a></li>
+                  <li class="list-group-item"><a href="#">Community Resource Center</a></li>
+                  <li class="list-group-item"><a href="#">County Phone Directory</a></li>
+                  <li class="list-group-item"><a href="#">Little Tennessee River Greenway</a></li>
+                  <li class="list-group-item"><a href="#">Macon County E-Newsletter</a></li>
+                  <li class="list-group-item"><a href="#">Macon County Public Library</a></li>
+                  <li class="list-group-item"><a href="#">Macon County Airport</a></li>
+                  <li class="list-group-item"><a href="#">Macon County Schools</a></li>
+                  <li class="list-group-item"><a href="#">Macon County Weather</a></li>
+                  <li class="list-group-item"><a href="#">Permits, Licenses & Inspections</a></li>
+                  <li class="list-group-item"><a href="#">Prescription Discount Card</a></li>
+                  <li class="list-group-item"><a href="#">SEE ALL RESOURCES</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#businessMenu">
+                For Businesses
+              </button>
+            </h2>
+            <div id="businessMenu" class="accordion-collapse collapse">
+              <div class="accordion-body p-0">
+                <ul class="list-group">
+                  <li class="list-group-item"><a href="#">Economic Development Commission</a></li>
+                  <li class="list-group-item"><a href="#">Local & State Government Links</a></li>
+                  <li class="list-group-item"><a href="#">North Carolina Public Records</a></li>
+                  <li class="list-group-item"><a href="#">Permits, Licenses & Inspections</a></li>
+                  <li class="list-group-item"><a href="#">Tax & Mapping</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#visitorsMenu">
+                For Visitors
+              </button>
+            </h2>
+            <div id="visitorsMenu" class="accordion-collapse collapse">
+              <div class="accordion-body p-0">
+                <ul class="list-group">
+                  <li class="list-group-item"><a href="#">Tour Macon County</a></li>
+                  <li class="list-group-item"><a href="#">Franklin Chamber of Commerce</a></li>
+                  <li class="list-group-item"><a href="#">Highlands Chamber of Commerce</a></li>
+                  <li class="list-group-item"><a href="#">Little Tennessee River Greenway</a></li>
+                  <li class="list-group-item"><a href="#">Macon County Airport</a></li>
+                  <li class="list-group-item"><a href="#">Parks & Recreation</a></li>
+                  <li class="list-group-item"><a href="#">Town of Franklin</a></li>
+                  <li class="list-group-item"><a href="#">Town of Franklin Tourism</a></li>
+                  <li class="list-group-item"><a href="#">Town of Highlands</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+
+          <a class="list-group-item list-group-item-action collapsed" href="#">Public Announcements</a>
+
+
+        </div>
+      </div>
+    </div>
     </div>
   </nav>
   <main class="container">
-    
+
     <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark bg-gradient">
       <picture>
         <source srcset="images/david-vig-qwHHOC2z5Xs-unsplash.jpg">
         <source srcset="images/david-vig-qwHHOC2z5Xs-unsplash.jpg">
-        <img src="images/david-vig-qwHHOC2z5Xs-unsplash.jpg" alt="underside of a tree with the sun shining through the leaves" style=" width:500px;height:300px">
+        <img src="images/david-vig-qwHHOC2z5Xs-unsplash.jpg"
+          alt="underside of a tree with the sun shining through the leaves" width="500" height="400" role="img">
       </picture>
       <div class="col-md-6 px-0">
         <h1 class="display-4 fst-italic">Title Placeholder</h1>
-        <p class="lead my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+        <p class="lead my-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua...</p>
         <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
       </div>
     </div>
@@ -177,7 +412,8 @@
             <strong class="d-inline-block mb-2 text-success">Upcoming Events</strong>
             <h3 class="mb-0 text-muted">Title Placeholder</h3>
             <div class="mb-1 text-muted">Nov 12</div>
-            <p class="card-text mb-auto text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            <p class="card-text mb-auto text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
               Ut enim ad ...</p>
             <a href="#" class="stretched-link">Continue reading</a>
           </div>
@@ -193,7 +429,8 @@
             <strong class="d-inline-block mb-2 text-success">Upcoming Meetings</strong>
             <h3 class="mb-0 text-muted">Title Placeholder</h3>
             <div class="mb-1 text-muted">Nov 11</div>
-            <p class="mb-auto text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
+            <p class="mb-auto text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua...</p>
             <a href="#" class="stretched-link">Continue reading</a>
           </div>
           <div class="col-auto d-none d-lg-block">
@@ -205,28 +442,34 @@
 
     <div class="row g-5">
       <div class="col-md-8">
-       
+
         <article class="blog-post">
           <h2 class="blog-post-title text-success">Title Placeholder</h2>
           <p class="blog-post-meta">January 1, 2026 by <a href="#">John Doe</a></p>
 
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et  
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea
+            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
           <hr>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
           <h2>Sub Placeholder</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-          sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <h3>Sub Placeholder</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam.</p>
         </article>
       </div>
-      <!-- Carousel -->
+      
       <div id="demo" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
@@ -275,7 +518,7 @@
             href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">Link Placeholder</a>.</p>
         <ul>
           <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
-        </li>
+          </li>
           <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</li>
           <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</li>
           <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore</li>
@@ -284,7 +527,7 @@
         </ul>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
         <h2>Heading Placeholder</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
         </article>
 
@@ -297,13 +540,16 @@
           </div>
           <p class="blog-post-meta">December 23, 2020 by <a href="#">John Doe</a></p>
 
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea
             commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum </p>
           <blockquote>
-            <p>dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <p>dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+              officia deserunt mollit anim id est laborum.</p>
           </blockquote>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam,
             quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
           <h3>Example table</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit:</p>
@@ -353,15 +599,18 @@
           </div>
           <p class="blog-post-meta">December 14, 2020 by <a href="#">John Doe</a></p>
 
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
-            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+            ex ea commodo consequat.</p>
           <ul>
             <li>1st</li>
             <li>Second</li>
             <li>3rd Third</li>
           </ul>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor
             in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         </article>
 
@@ -373,7 +622,7 @@
       </div>
 
 
-      <!-- Footer-->
+     
     </div>
   </main>
   <footer class="py-10 bg-success bg-gradient">

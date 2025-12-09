@@ -1,4 +1,4 @@
-/* stylelint-disable selector-list-comma-newline-after */
+
 
 body{
   background-color: rgb(228, 213, 191);
@@ -14,13 +14,13 @@ body{
 }
 
 .blog-header-logo {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
   font-size: 3.25rem;
   color: rgb(61, 107, 61);
 }
 
 .blog-subheader-logo {
-  font-family: "Arial", sans-serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  font-family: "Arial", sans-serif;
   font-size: 1.25rem;
   color:rgb(61,107,61);
 }
@@ -29,8 +29,12 @@ body{
   text-decoration: none;
 }
 
+.accordian-item {
+  font-family: "Arial", sans-serif;
+}
+
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
 }
 
 img {
@@ -71,6 +75,22 @@ img {
   font-size: .875rem;
 }
 
+.navbar .nav-link {
+  white-space: normal;
+  text-align: center;
+}
+
+.search-form {
+  max-width: 300px;  
+  width: 100%;       
+}
+
+@media (max-width: 767px) {
+  .search-form {
+    display: none;   
+  }
+}
+
 .card-img-right {
   height: 100%;
   border-radius: 0 3px 3px 0;
@@ -85,7 +105,7 @@ img {
   .h-md-250 { height: 250px; }
 }
 
-/* Pagination */
+
 .blog-pagination {
   margin-bottom: 4rem;
 }
@@ -93,9 +113,7 @@ img {
   border-radius: 2rem;
 }
 
-/*
- * Blog posts
- */
+
 .blog-post {
   margin-bottom: 4rem;
 }
@@ -108,9 +126,7 @@ img {
   color: #727272;
 }
 
-/*
- * Footer
- */
+
 .blog-footer {
   padding: 2.5rem 0;
   color: #727272;
@@ -127,40 +143,7 @@ img {
   background-color: #e9e9e9;
 }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Style the "active" element to highlight the current page */
-.topnav a.active {
-  background-color: #1e75bd;
-  color: white;
-}
-
-/* Style the search box inside the navigation bar */
-.topnav input[type=text] {
-  float: right;
-  padding: 6px;
-  border: none;
-  margin-top: 8px;
-  margin-right: 16px;
-  font-size: 17px;
-}
-
-/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
 @media screen and (max-width: 600px) {
   .topnav a, .topnav input[type=text] {
     float: none;
